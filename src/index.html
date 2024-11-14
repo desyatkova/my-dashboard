@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Pixelify+Sans:wght@400..700&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid">
+    <section class="row flex-grow-1 vh-100">
+        <!-- Offcanvas Sidebar for smaller screens -->
+        <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="offcanvasSidebar"
+             aria-labelledby="offcanvasSidebarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasSidebarLabel">Dashboard Kit</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav>
+                    <ul class="nav flex-column mt-3">
+                        <li class="nav-item"><a href="#" class="nav-link text-dark">
+                            <i class="bi bi-pie-chart-fill"></i> Overview</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-dark">
+                            <i class="bi bi-ticket-detailed-fill"></i> Tickets</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-dark">
+                            <i class="bi bi-lightbulb-fill"></i> Ideas</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-dark">
+                            <i class="bi bi-people-fill"></i> Contacts</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-dark">
+                            <i class="bi bi-person-lines-fill"></i> Agents</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-dark">
+                            <i class="bi bi-journal-text"></i> Articles</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-dark">
+                            <i class="bi bi-gear-fill"></i> Settings</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-dark">
+                            <i class="bi bi-award-fill"></i> Subscription</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Sidebar for larger screens -->
+        <aside id="sidebar" class="p-0 sidebar col-auto bg-dark text-white d-none d-md-block" aria-label="Main navigation">
+            <section class="d-flex align-items-center">
+                <img class="me-2" src="./assets/icon.svg" alt="Dashboard icon">
+                <h6 class="mt-0 mb-0">Dashboard Kit</h6>
+            </section>
+            <nav>
+                <ul class="nav flex-column">
+                    <li class="nav-item active"><a href="#" class="nav-link text-white">
+                        <i class="bi bi-pie-chart-fill"></i> Overview</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">
+                        <i class="bi bi-ticket-detailed-fill"></i> Tickets</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">
+                        <i class="bi bi-lightbulb-fill"></i> Ideas</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">
+                        <i class="bi bi-people-fill"></i> Contacts</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">
+                        <i class="bi bi-person-lines-fill"></i> Agents</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">
+                        <i class="bi bi-journal-text"></i> Articles</a></li>
+                    <li class="separator"></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">
+                        <i class="bi bi-gear-fill"></i> Settings</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">
+                        <i class="bi bi-award-fill"></i> Subscription</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="col content">
+            <header class="d-flex justify-content-between align-items-center mt-3">
+                <h1 class="overview-elm">Overview</h1>
+                <div class="user-info d-flex align-items-center">
+                    <div class="desktop-only d-none d-md-block header-icons">
+                        <i class="bi bi-search"></i>
+                        <i class="bi bi-bell-fill">
+                            <span class="notification"></span>
+                        </i>
+                        <span class="separator"></span>
+                    </div>
+                    <span>Jones Ferdinand</span>
+                    <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">
+                        <img src="https://api.dicebear.com/9.x/big-smile/svg?seed=Aidan&flip=true" alt="Profile"
+                             class="round-icon rounded-circle ml-2" width="60">
+                    </button>
+                    <i class="desktop-only d-none d-md-block">
+                        <img src="https://api.dicebear.com/9.x/big-smile/svg?seed=Aidan&flip=true" alt="Profile"
+                             class="round-icon rounded-circle ml-2" width="60">
+                    </i>
+                </div>
+            </header>
+
+            <section class="scrollable-row">
+                <div class="row flex-nowrap">
+                    <div class="card-wrap col-6 col-md-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Unresolved</h5>
+                                <p class="card-text">60</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrap col-6 col-md-3">
+                        <div class="card text-center active-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Overdue</h5>
+                                <p class="card-text">16</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrap col-6 col-md-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Open</h5>
+                                <p class="card-text">43</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrap col-6 col-md-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">On Hold</h5>
+                                <p class="card-text">64</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="charts mt-4">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <!-- Chart Section -->
+                        <div class="border-end col-12 col-lg-8 p-4">
+                            <div class="card-body p-0">
+                                <h5 class="card-title">Today's Trends</h5>
+                                <h6 class="card-subtitle mb-4">as of 25 May 2019, 09:41 PM</h6>
+                                <canvas id="trendChart" width="1285" height="860"
+                                        style="display: block; box-sizing: border-box; height: 321px; width: 642px;"></canvas>
+                            </div>
+                        </div>
+                        <!-- Sidebar Section -->
+                        <aside class="graph-menu col-12 col-lg-4 d-none d-lg-block p-0">
+                            <div class="card-body p-0">
+                                <div class="mb-3 border-bottom text-center">
+                                    <h6>Resolved</h6>
+                                    <h3>449</h3>
+                                </div>
+                                <div class="mb-3 border-bottom text-center">
+                                    <h6>Received</h6>
+                                    <h3>426</h3>
+                                </div>
+                                <div class="mb-3 border-bottom text-center">
+                                    <h6>Average first response time</h6>
+                                    <h3>33m</h3>
+                                </div>
+                                <div class="mb-3 border-bottom text-center">
+                                    <h6>Average response time</h6>
+                                    <h3>3h 8m</h3>
+                                </div>
+                                <div class="pb-2 text-center">
+                                    <h6>Resolution within SLA</h6>
+                                    <h3>94%</h3>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tasks mt-4 mb-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item justify-content-between align-items-center">
+                                <div class="row-header row row-cols-2">
+                                    <div>
+                                        <h5 class="card-title">Unresolved Tickets</h5>
+                                        <div class="card-title-secondary"><span>Group:</span> Support</div>
+                                    </div>
+                                    <h6 class="card-link text-end">View details</h6>
+                                </div>
+
+                                <div class="justify-content-between d-flex">
+                                    <span class="list-label-ttl">Waiting on Feature Request</span>
+                                    <span class="badge badge-primary badge-pill">4238</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span class="list-label-ttl">Awaiting Customer Response</span>
+                                <span class="badge badge-primary badge-pill">1005</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span class="list-label-ttl">Awaiting Developer Fix</span>
+                                <span class="badge badge-primary badge-pill">914</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span class="list-label-ttl">Pending</span>
+                                <span class="badge badge-primary badge-pill">281</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6 top-offset-30">
+                        <ul class="list-group">
+                            <li class="list-group-item justify-content-between align-items-center">
+                                <div class="row-header row row-cols-2">
+                                    <div>
+                                        <h5 class="card-title">Tasks</h5>
+                                        <div class="card-title-secondary"><span>Today</span></div>
+                                    </div>
+                                    <h6 class="card-link text-end">View All</h6>
+                                </div>
+
+                                <div class="justify-content-between d-flex">
+                                    <span class="card-label">Create new task</span>
+                                    <span class="badge badge-primary badge rounded-pill text-bg-secondary">+</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
+                                           id="firstCheckbox">
+                                    <label class="form-check-label" for="firstCheckbox">Finish ticket update</label>
+                                </div>
+                                <span class="badge badge-primary badge rounded-pill text-bg-warning">Urgent</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
+                                           id="secondCheckbox">
+                                    <label class="form-check-label" for="secondCheckbox">Create new ticket
+                                        example</label>
+                                </div>
+                                <span class="badge badge-primary badge rounded-pill text-bg-success">New</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
+                                           id="thirdCheckbox">
+                                    <label class="form-check-label" for="thirdCheckbox">Update ticket report</label>
+                                </div>
+                                <span class="badge badge-primary badge rounded-pill text-bg-secondary">Default</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </section>
+</div>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
